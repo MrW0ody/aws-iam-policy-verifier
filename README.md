@@ -15,39 +15,39 @@ requirements specified for IAM policies in Amazon Web Services.
        https://www.python.org/downloads/ 
    and choose version for your system
 
-2. Create directory for example:  homework
+2. Create directory for example:  `homework`
 3. Navigate to the created directory:
 4. Open git and clone this project to your local machine:
 
 
-      git clone repository name
+             git clone https://github.com/MrW0ody/aws-iam-policy-verifier.git
 
 
-5. Open repository directory in pycharm or visual studio code
+5. Open repository directory in pycharm or visual studio code:
 6. create virtual environment in repository directory:
       
 
-      pip install virtualenv
+             pip install virtualenv
       
-      virtualenv venv
+             virtualenv venv
       
-      enter venv\scripts\activate
+             enter venv\scripts\activate
       
 6. Install requirements.txt:
 
 
-      pip install -r requirements.txt
+             pip install -r requirements.txt
 
 7. Run the application:
 
 
    If you are usign pycharm open main.py file and press:
 
-         ctrl+shift+F10
+                ctrl+shift+F10
 
    or if you are using vscode enter in terminal:
             
-         python main.py
+                python main.py
 
 ## Usage
 
