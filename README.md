@@ -31,7 +31,7 @@ requirements specified for IAM policies in Amazon Web Services.
       
              virtualenv venv
       
-             enter venv\scripts\activate
+             venv\scripts\activate
       
 6. Install requirements.txt:
 
