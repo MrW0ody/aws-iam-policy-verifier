@@ -31,3 +31,7 @@ class TestPolicyVerifier:
     def test_verify_iam_policy_empty_file(self):
         file = 'files/empty_file.json'
         assert self.policy_verifier.verify_iam_policy(file) == 'Error File is empty'
+
+    def test_verify_iam_policy_resource_not_star(self):
+        file = 'files/resource_not_asterix_file.json'
+        assert self.policy_verifier.verify_iam_policy(file) == True

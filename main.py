@@ -44,14 +44,17 @@ if __name__ == '__main__':
     file3 = 'files/zero_asterix_file.json'
     print(f'Zero asterix : {policy_verifier.verify_iam_policy(json_file=file3)}')
 
-    file4 = 'files/file_without_statement.json'
-    print(f'File without statement: {policy_verifier.verify_iam_policy(json_file=file4)}')
+    file4 = 'files/resource_not_asterix_file.json'
+    print(f'Resource field with text not asterix: {policy_verifier.verify_iam_policy(json_file=file4)}')
 
-    file5 = 'files/non_existent_file.json'
-    print(f'File not found: {policy_verifier.verify_iam_policy(json_file=file5)}')
+    file5 = 'files/file_without_statement.json'
+    print(f'File without statement: {policy_verifier.verify_iam_policy(json_file=file5)}')
 
-    file6 = 'files/file.txt'
-    print(f'Not json type file: {policy_verifier.verify_iam_policy(json_file=file6)}')
+    file6 = 'files/non_existent_file.json'
+    print(f'File not found: {policy_verifier.verify_iam_policy(json_file=file6)}')
 
-    file7 = 'files/empty_file.json'
-    print(f'Empty file: {policy_verifier.verify_iam_policy(json_file=file7)}')
+    file7 = 'files/file.txt'
+    print(f'Not json type file: {policy_verifier.verify_iam_policy(json_file=file7)}')
+
+    file8 = 'files/empty_file.json'
+    print(f'Empty file: {policy_verifier.verify_iam_policy(json_file=file8)}')
